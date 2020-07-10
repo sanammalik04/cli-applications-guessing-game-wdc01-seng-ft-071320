@@ -1,6 +1,6 @@
 # Code your solution here!
 def run_guessing_game
-  rightAnswer = rand(6) + 1
+  rightAnswer = (rand(6) + 1).to_s
   puts "Type your guess! "
   userGuess = gets.chomp
   if userGuess == rightAnswer then
